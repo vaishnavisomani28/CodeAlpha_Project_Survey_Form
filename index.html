@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Feedback Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="web1.jpg" rel="icon">
+    <link href="web1.jpg" rel="apple-touch-icon"> 
+  
+</head>
+
+<body>
+    <div class="background">
+        <div class="container">
+       <h1>Survey Form</h1>    
+            <form id="surveyForm">
+                <!-- Page 1 -->
+                <div class="page active" id="page1">
+                    <label for="name"><b>Name:</b></label>
+                    <input type="text" id="name" name="name" placeholder="name " required>
+
+                    <label for="email"><b>Email:</b></label>
+                    <input type="email" id="email" name="email" placeholder="email" required>
+
+                    <label for="mobile"><b>Mobile No:</b></label>
+                    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required placeholder="78********"
+                        maxlength="10" required>
+
+                    <label for="college"><b>College Name:</b></label>
+                    <input type="text" id="college" name="college" required>
+
+                    <label for="country"><b>Country:</b></label>
+                    <input type="text" id="country" name="country" required>
+                    <br>
+
+                    <button type="button" class="nextBtn">Next</button>
+                </div>
+
+                <!-- Page 2 -->
+                <div class="page" id="page2">
+                    <label for="address"><b>Address:</b></label>
+                    <textarea id="address" name="address" placeholder="address" required></textarea>
+
+                    <label><b>Year of Study:</b></label>
+                    <label for="1st"><input type="radio" id="1st" name="year" value="1st" required> 1st</label>
+                    <label for="2nd"><input type="radio" id="2nd" name="year" value="2nd" required> 2nd</label>
+                    <label for="3rd"><input type="radio" id="3rd" name="year" value="3rd" required> 3rd</label>
+                    <label for="4th"><input type="radio" id="4th" name="year" value="4th" required> 4th</label>
+
+                    <label for="course"><b>Course:</b></label>
+                    <input type="text" id="course" name="course" required>
+
+                    <label><b>Gender:</b></label>
+                    <label for="male"><input type="radio" id="male" name="gender" value="Male" required> Male</label>
+                    <label for="female"><input type="radio" id="female" name="gender" value="Female" required>
+                        Female</label>
+                    <label for="other"><input type="radio" id="other" name="gender" value="Other" required>
+                        Other</label>
+
+                    <button type="button" class="prevBtn">Previous</button>
+                    <button type="button" class="nextBtn">Next</button>
+                </div>
+
+                <!-- Page 3 -->
+                <div class="page" id="page3">
+                    <label><b>How satisfied are you with your campus facilities?</b></label>
+                    <label for="satisfied"><input type="radio" id="satisfied" name="satisfaction" value="Satisfied" required>
+                        Satisfied</label>
+                    <label for="neutral"><input type="radio" id="neutral" name="satisfaction" value="Neutral" required>
+                        Neutral</label>
+                    <label for="dissatisfied"><input type="radio" id="dissatisfied" name="satisfaction" value="Dissatisfied"
+                            required> Dissatisfied</label>
+                    <label for="veryDissatisfied"><input type="radio" id="veryDissatisfied" name="satisfaction"
+                            value="Very Dissatisfied" required> Very Dissatisfied</label>
+                    <!-- Add radio buttons here -->
+
+                    <label><b>From Where you came to know about this:</b></label>
+                    <label for="Social Media"><input type="radio" id="Social Media" name="where" value="Social Media" required> Social Media</label>
+                    <label for="College TPO"><input type="radio" id="College TPO" name="where" value="College TPO" required> College TPO</label>
+                    <label for="Linkedln"><input type="radio" id="Linkedln" name="where" value="Linkedln" required>Linkedln</label>
+                    <label for="Other"><input type="radio" id="Other" name="where" value="Other" required>Other</label>
+                    <!-- Add radio buttons here -->
+
+                    <label><b>Would you recommend others?</b></label>
+                    <label for="Yes"><input type="radio" id="Yes" name="whould" value="Yes" required> Yes</label>
+                    <label for="No"><input type="radio" id="No" name="whould" value="No" required> No</label>
+                    <label for="Most Likely"><input type="radio" id="Most Likely" name="whould" value="Most Likely" required>Most Likely</label>
+                    <label for="Other"><input type="radio" id="Other" name="where" value="Other" required>Other</label> 
+                    <!-- Add radio buttons here -->
+
+                    <label for="comments"><b>Any additional comments or suggestions?</b></label>
+                    <textarea id="comments" name="comments" placeholder="suggestions" required></textarea>
+                    <br>
+
+                    <button type="button" class="prevBtn">Previous</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+            <!-- <div id="submittedData"></div> -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
